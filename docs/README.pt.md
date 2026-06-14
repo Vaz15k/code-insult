@@ -4,9 +4,10 @@
 
 > [English 🇺🇸](docs/README.md) | **Português 🇧🇷**
 
-[![Python](https://img.shields.io/badge/python-≥3.11-blue.svg)](https://www.python.org/)
+[![PyPI](https://img.shields.io/pypi/v/codeinsult?color=blue)](https://pypi.org/project/codeinsult/)
+[![Python](https://img.shields.io/pypi/pyversions/codeinsult)](https://www.python.org/)
+[![Downloads](https://img.shields.io/pypi/dm/codeinsult)](https://pypi.org/project/codeinsult/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](codeinsult/__version__.py)
 
 ---
 
