@@ -37,6 +37,7 @@ optional-dependencies.dev = [
 
 urls.Source = "https://github.com/Vaz15k/code-insult"
 urls.Tracker = "https://github.com/Vaz15k/code-insult/issues"
+urls.PyPI = "https://pypi.org/project/codeinsult/"
 
 [tool.setuptools.dynamic]
 version = {attr = "codeinsult.__version__.__version__"}
