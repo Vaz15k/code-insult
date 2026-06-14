@@ -1,7 +1,6 @@
-from config import InsultLevel
-from messages.base import BaseMessageProvider, MessageCatalog
-from messages.registry import register_provider
-
+from codeinsult.config import InsultLevel
+from codeinsult.messages.base import BaseMessageProvider, MessageCatalog
+from codeinsult.messages.registry import register_provider
 
 _STATUS_MESSAGES = {
     # ═══ 2xx — Success ═══════════════════════════════════════════════════════════

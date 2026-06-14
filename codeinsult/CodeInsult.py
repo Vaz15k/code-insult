@@ -1,18 +1,39 @@
 import random
 from typing import Optional
 
-from config import InsultLevel
-from messages.registry import available_languages, get_provider
+from codeinsult.config import InsultLevel
+from codeinsult.messages.registry import available_languages, get_provider
 
-__all__ = [
-    "insult",
-    "random_insult",
-    "available_languages",
-]
+_default_lang: str = "pt_br"
+_default_level: Optional[InsultLevel] = None
 
 
-default_lang: str = "pt_br"
-default_level: Optional[InsultLevel] = None
+def set_defaults(
+    *,
+    lang: str = "pt_br",
+    level: Optional[InsultLevel] = None,
+) -> None:
+    """Configura o idioma e nível de severidade padrão globais.
+
+    Args:
+        lang: Idioma padrão (ex: ``"pt_br"``).
+        level: Nível de severidade padrão (``InsultLevel.LIGHT``, etc.).
+            ``None`` para usar todos os níveis.
+
+    Raises:
+        ValueError: Se o idioma não estiver registrado.
+
+    Example:
+        >>> codeinsult.set_defaults(lang="pt_br", level=InsultLevel.LIGHT)
+        >>> codeinsult.insult(404)  # usa pt_br + LIGHT
+    """
+    global _default_lang, _default_level
+    if lang not in available_languages():
+        raise ValueError(
+            f"Idioma '{lang}' não disponível. Disponíveis: {available_languages()}"
+        )
+    _default_lang = lang
+    _default_level = level
 
 
 def insult(
@@ -30,8 +51,8 @@ def insult(
             Se None, usa TODOS os níveis.
         lang: Idioma (ex: `"pt_br"`). Se None, usa `pt_br`.
     """
-    level = level if level is not None else default_level
-    lang = lang if lang is not None else default_lang
+    level = level if level is not None else _default_level
+    lang = lang if lang is not None else _default_lang
 
     provider = get_provider(lang)
     messages = provider.get_messages(status_code, level)
@@ -64,8 +85,8 @@ def random_insult(
             Se None, usa usa TODOS os níveis.
         lang: Idioma (ex: `"pt_br"`). Se None, usa `pt_br`.
     """
-    level = level if level is not None else default_level
-    lang = lang if lang is not None else default_lang
+    level = level if level is not None else _default_level
+    lang = lang if lang is not None else _default_lang
 
     provider = get_provider(lang)
     catalog = provider.catalog

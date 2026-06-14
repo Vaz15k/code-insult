@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 
-from config import InsultLevel
+from codeinsult.config import InsultLevel
 
 
 @dataclass

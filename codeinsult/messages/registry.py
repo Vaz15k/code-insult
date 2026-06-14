@@ -1,4 +1,4 @@
-from messages.base import BaseMessageProvider
+from codeinsult.messages.base import BaseMessageProvider
 
 _registry: dict[str, BaseMessageProvider] = {}
 
