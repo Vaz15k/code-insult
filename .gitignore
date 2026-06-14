@@ -5,3 +5,8 @@
 .ruff_cache/*
 **/__pycache__/**
 .pytest_cache/*
+
+dist/
+build/
+*.egg-info/
+*.eggs/
