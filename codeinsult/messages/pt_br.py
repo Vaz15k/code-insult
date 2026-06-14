@@ -7,7 +7,7 @@ _STATUS_MESSAGES = {
     200: {
         InsultLevel.LIGHT: [
             "Tudo certo, nada errado — e isso é raro o suficiente pra comemorar.",
-            "Deu bom! Até o Paulo Guedes aprovaria esse request.",
+            "Deu bom! Até o Knuckles aprovaria esse request.",
             "200 OK: a paz reina neste reino. Por enquanto.",
             'Como diria o Chapolin: "Não contavam com minha astúcia!" — Funcionou!',
             "Sucesso. Até o Homer Simpson conseguiu. D'oh! ...quer dizer, Woo-hoo!",
@@ -162,7 +162,7 @@ _STATUS_MESSAGES = {
     },
     404: {
         InsultLevel.LIGHT: [
-            '404 Not Found: "Procurei em toda galáxia e não achei." — Baby Yoda.',
+            '404 Not Found: "Procurei em toda galáxia e não achei." — Mando, procurando Grogu.',
             "404: O recurso sumiu. Como meias na máquina de lavar.",
             "Não encontrado. Igual o Sétimo Sentido da deep web. Simplesmente não existe.",
             '"O que você procura não está aqui." — Yoda, servindo HTTP.',
@@ -197,7 +197,7 @@ _STATUS_MESSAGES = {
     408: {
         InsultLevel.LIGHT: [
             "408 Request Timeout: 'O tempo é uma ilusão.' — Einstein. Mas o timeout é real.",
-            "Demorou mais que intervalo do Lula pra responder pergunta de repórter.",
+            "Demorou mais que fila de banco em dia de pagamento.",
             "Timeout: o servidor cansou de esperar. Foi tomar um café.",
         ],
         InsultLevel.MEDIUM: [
@@ -314,7 +314,7 @@ _STATUS_MESSAGES = {
             "429: Você foi bloqueado. Não pelo conteúdo, mas pela insistência chata.",
         ],
         InsultLevel.HEAVY: [
-            "PARA DE ESPAMAR, DESGRAÇA! Isso não é boteco, tem limite!",
+            "PARA DE SPAMMAR, DESGRAÇA! Isso não é boteco, tem limite!",
             "429: Tá achando que aqui é farra? Toma um cooldown e volta depois!",
         ],
     },
@@ -367,7 +367,7 @@ _STATUS_MESSAGES = {
     },
     503: {
         InsultLevel.LIGHT: [
-            "503 Service Unavailable: 'Voltei, mas não pra sempre.' — Crashed.",
+            "503 Service Unavailable: 'Voltamos já!' — Placa de loja que nunca volta.",
             "Serviço indisponível. O servidor tirou férias. Mercado Pago feelings.",
             "503: O servidor foi dormir. Tenta amanhã, ou depois, ou nunca.",
         ],
